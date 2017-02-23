@@ -1,0 +1,26 @@
+<!--  This new directive is the content of Specification's tab -->
+<section >
+  <ul class="nav nav-pills">
+    <li ng-class="{ active: tab.isSet(1) }" class="active">
+      <a href ng-click="tab.setTab(1)">Description</a></li>
+    <li ng-class="{ active: tab.isSet(2) }">
+      <a href ng-click="tab.setTab(2)">Specification</a></li>
+    <li ng-class="{ active: tab.isSet(3) }">
+      <a href ng-click="tab.setTab(3)">Reviews</a></li>
+  </ul>
+  <!-- Description tab's content -->
+  <product-description ng-show="tab.isSet(1)"></product-description>
+  <!--<div ng-include = "'product-description.html'" ng-show="tab.isSet(1)" >
+
+  </div>-->
+  <div product-specs ng-show="tab.isSet(2)">
+
+  </div>
+
+  <!-- Review Tab -->
+  <product-review ng-show="tab.isSet(3)"></product-review>
+  <!-- <div ng-include="'product-review.html'" ng-show="tab.isSet(3)">
+
+  </div>-->
+
+</section>

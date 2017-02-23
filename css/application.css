@@ -1,0 +1,10 @@
+.wrapper{
+		margin: 100px;
+		padding: 500px;
+		background: #fffacd;
+		border: 1px solid #000;
+	}
+.pull-left, .pull-right{
+    padding: 20px;
+		background: #e3b740;
+	}
